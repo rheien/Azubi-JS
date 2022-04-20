@@ -97,7 +97,7 @@ describe('functions', function () {
             let actual = Object.keys(args);
             let expected = ['0','1'];
 
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
 
         it('can has many arguments', function () {
@@ -110,9 +110,9 @@ describe('functions', function () {
 
             returnNumber(1,2,3,'a', 'b');
             let actual = Object.keys(args);
-            let expected = args;
+            let expected = ['0','1','2','3','4'];
 
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
     });
 
