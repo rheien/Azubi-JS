@@ -6,9 +6,8 @@ describe('objects', function () {
 
             let givenObject = {};
             let actual = Object.keys(givenObject);
-            console.log(givenObject)
             let expected = [];
-            assert.equal(actual, expected);
+            assert.deepEqual(actual, expected);
         });
 
         it('should return ??? of an object with keys', function () {
