@@ -19,5 +19,8 @@
   "homepage": "https://github.com/as-ideas/azubi-javascript#readme",
   "devDependencies": {
     "mocha": "^6.2.2"
+  },
+  "dependencies": {
+    "package.json": "^2.0.1"
   }
 }

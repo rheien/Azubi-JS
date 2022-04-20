@@ -13,7 +13,7 @@ describe('prototypes', function () {
         var u = new User();
 
         let actual = u.sayHello();
-        let expected = '???';
+        let expected = 'hello';
 
         assert.equal(actual, expected);
 
@@ -32,7 +32,7 @@ describe('prototypes', function () {
         var u = new User();
 
         let actual = u.sayHello();
-        let expected = '???';
+        let expected = 'Hello, my name is Sam!';
 
         assert.equal(actual, expected);
 
@@ -53,7 +53,7 @@ describe('prototypes', function () {
         var u = User();
 
         let actual = u.sayHello();
-        let expected = '???';
+        let expected = undefined;
 
         assert.equal(actual, expected);
     });
@@ -70,7 +70,7 @@ describe('prototypes', function () {
         var u = new User();
 
         let actual = u instanceof User;
-        let expected = '???';
+        let expected = true;
 
         assert.equal(actual, expected);
     });
@@ -98,7 +98,7 @@ describe('prototypes', function () {
             actual.push(greeting);
         })
 
-        let expected = '???';
+        let expected = ['I am Peter.','I am Paul.','I am Merry.'];
 
         assert.deepEqual(actual, expected);
     });
@@ -119,7 +119,7 @@ describe('prototypes', function () {
 
         let actual = u instanceof Person;
 
-        let expected = '???';
+        let expected = false;
 
         assert.equal(actual, expected);
     });
@@ -137,7 +137,7 @@ describe('prototypes', function () {
         var a = new Account("peter", "abc123");
         let actual = "" + a;
 
-        let expected = '???';
+        let expected = '[user="peter", hash=abc123]';
         assert.equal(actual, expected);
     });
 
@@ -154,7 +154,7 @@ describe('prototypes', function () {
 
         var o = { a: 1, b: 2 };
         let actual = "" + o;
-        let expected = '???';
+        let expected = 'I am object';
 
         // reset the overriden toString method back to original
         Object.prototype.toString = oldToString;
@@ -192,7 +192,7 @@ describe('prototypes', function () {
         var rec2 = new Rectangle(5, 5);
         let actual = `${rec1} and ${rec2} are cool`;
 
-        let expected = '???';
+        let expected = 'I am a Rectangle with an area of 50 and I am a Rectangle with an area of 25 are cool';
         assert.equal(actual, expected);
     });
 
@@ -209,7 +209,7 @@ describe('prototypes', function () {
 
         var actual = Object.getPrototypeOf(namedInstance) == NamedThing.prototype;
 
-        let expected = '???';
+        let expected = true;
         assert.equal(actual, expected);
     });
 
@@ -239,7 +239,7 @@ describe('prototypes', function () {
 
         var actual = greetings;
 
-        let expected = '???';
+        let expected = ['Hello, I am peter','Hello, I am Paul'];
         assert.equal(actual, expected);
     });
 
